@@ -53,12 +53,12 @@ function showRandomSide() {
 
 function showRandomMain() {
     var randomMainIndex = Math.floor(Math.random() * mains.length);
-    dish.innerText = `${mains[randomMainIndex]}!`
+    dish.innerText = `${mains[randomMainIndex]}!`;
 };
 
 function showRandomDessert() {
     var randomDessertIndex = Math.floor(Math.random() * desserts.length);
-    dish.innerText = `${desserts[randomDessertIndex]}!`
+    dish.innerText = `${desserts[randomDessertIndex]}!`;
 };
 
 function displayRandomDish() {
@@ -75,5 +75,6 @@ function displayRandomDish() {
 };
 
 function clearRandomDish() {
-    console.log("hello");
+    suggestedDishView.classList.add("hidden");
+    icon.classList.remove("hidden");
 };
