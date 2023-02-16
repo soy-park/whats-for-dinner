@@ -21,7 +21,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0;
 }
 
 section {
@@ -32,13 +31,13 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 7em;
 }
 
-section article {
+article {
     background-color: rgba(225, 225, 225, .9);
     height: 52vh;
     width: 35vw;
-    margin-top: 7em;
 }
 
 .whats-for-dinner-header {
@@ -92,17 +91,51 @@ li {
     cursor: pointer;
 }
 
+svg {
+    width: 10em;
+    height: 10em;
+}
+
 .box-2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-svg {
-    width: 10em;
-    height: 10em;
+.suggestion-view {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(225, 225, 225, .2);
+}
+
+.you-should-make {
+    margin-bottom: 0;
+    margin-top: 8em;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.dish {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.clear-btn {
+    margin: 7em 0.5em 1em 23.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #95a5a6;
+    color: white;
+    font-size: 16px;
 }
 
 .hidden {
     display: none;
 }
+
