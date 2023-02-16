@@ -8,3 +8,101 @@ red - #ee5253
 
 */
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+header {
+    background-color: #0fb9b1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+section {
+    background-image: url("./assets/burger-friends.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section article {
+    background-color: rgba(225, 225, 225, .9);
+    height: 52vh;
+    width: 35vw;
+    margin-top: 7em;
+}
+
+.whats-for-dinner-header {
+    margin-left: 1em;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.add-recipe-btn {
+    margin: 1em 1.4em 1em 1em;
+    padding: 0.4em 0.7em 0.4em 0.7em;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.what-are-you-looking-for {
+    margin: 2.5em 0em 0em 1.5em;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.what-are-you-looking-for::after {
+    content: "*";
+    color: red;
+}
+
+.box-1-list {
+    list-style: none;
+}
+
+li {
+    margin-top: 1.5em;
+    font-size: 20px;
+}
+
+.lets-cook-btn {
+    border-radius: 5px;
+    border: none;
+    background-color: #0fb9b1;
+    padding: 0.8em 3.5em 0.8em 3.5em;
+    margin-top: 1.5em;
+    margin-left: 3em;
+    font-size: 16px;
+}
+
+.lets-cook-btn:hover {
+    background-color: #0fb9b1;
+    opacity: 0.7;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    width: 10em;
+    height: 10em;
+}
+
+.hidden {
+    display: none;
+}
