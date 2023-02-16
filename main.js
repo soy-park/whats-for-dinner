@@ -35,37 +35,31 @@ var dessertBtn = document.querySelector('.dessert-btn');
 var icon = document.querySelector('.icon');
 var suggestedDishView = document.querySelector('.suggestion-view');
 var youShouldMake = document.querySelector('.you-should-make');
+var clearBtn = document.querySelector('.clear-btn');
+var dish = document.querySelector('.dish');
 
-letsCookBtn.addEventListener('click', displayRandomDish)
+letsCookBtn.addEventListener('click', displayRandomDish);
+clearBtn.addEventListener('click', clearRandomDish);
 
 function hideIcon() {   
     icon.classList.add("hidden");
     suggestedDishView.classList.remove("hidden");
-}
+};
 
 function showRandomSide() {
     var randomSideIndex = Math.floor(Math.random() * sides.length);
-    suggestedDishView.innerHTML = 
-        `<p class="you-should-make"><em>You should make:</em></p> 
-        <h1 class="dish">${sides[randomSideIndex]}!<h1>
-        <button class="clear-btn">CLEAR</button>`
-}
+    dish.innerText = `${sides[randomSideIndex]}!`;
+};
 
 function showRandomMain() {
     var randomMainIndex = Math.floor(Math.random() * mains.length);
-    suggestedDishView.innerHTML = 
-        `<p class="you-should-make"><em>You should make:</em></p> 
-        <h1 class="dish">${mains[randomMainIndex]}!<h1>
-        <button class="clear-btn">CLEAR</button>`
-}
+    dish.innerText = `${mains[randomMainIndex]}!`
+};
 
 function showRandomDessert() {
     var randomDessertIndex = Math.floor(Math.random() * desserts.length);
-    suggestedDishView.innerHTML = 
-        `<p class="you-should-make"><em>You should make:</em></p> 
-        <h1 class="dish">${desserts[randomDessertIndex]}!<h1>
-        <button class="clear-btn">CLEAR</button>`
-}
+    dish.innerText = `${desserts[randomDessertIndex]}!`
+};
 
 function displayRandomDish() {
     hideIcon();
@@ -76,6 +70,10 @@ function displayRandomDish() {
     } else if (dessertBtn.checked) {
         showRandomDessert();
     } else {
-        alert("Please select a category!");
+        alert("Please select an option!");
     }
-}
+};
+
+function clearRandomDish() {
+    console.log("hello");
+};
