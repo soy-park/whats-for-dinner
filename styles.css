@@ -29,10 +29,16 @@ section {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0em 0em 0em 0em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+section article {
+    background-color: rgba(225, 225, 225, .9);
+    height: 52vh;
+    width: 35vw;
+    margin-top: 7em;
 }
 
 .whats-for-dinner-header {
@@ -47,6 +53,32 @@ section {
     border-radius: 5px;
     border: none;
     font-size: 16px;
+}
+
+.what-are-you-looking-for {
+    margin: 2.5em 0em 0em 1.5em;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.what-are-you-looking-for::after {
+    content: "*";
+    color: red;
+}
+
+.box-1-list {
+    list-style: none;
+}
+
+li {
+    margin-top: 1.5em;
+    font-size: 20px;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 svg {
