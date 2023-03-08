@@ -2,7 +2,7 @@
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
-For this project, I built an app that makes meal suggestions for users who are debating on which meal to prepare. Users are able to choose an option (side, main, or dessert), and the app will display a randomly selected dish. The app incorporates HTML and CSS styling that mimics a comp. The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). The app adds functionality to radio buttons, "Let's Cook" button, and "CLEAR" button by adding event listeners and handlers to these buttons.
+For this project, I built an app that makes meal suggestions for users who are debating on which meal to prepare. Users are able to choose an option (side, main, or dessert), and the app will display a randomly selected dish. The app incorporates HTML and CSS styling that mimics a comp. The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). The app adds functionality to radio buttons, "Let's Cook" button, and "CLEAR" button by adding event listeners and handlers to these buttons. The site can be found here: https://soy-park.github.io/whats-for-dinner/
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
